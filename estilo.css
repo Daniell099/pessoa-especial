@@ -1,46 +1,60 @@
- *{
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variáveis globais */
-:root {
-  --cor-primaria: #4f46e5;
-  --cor-secundaria: #22c55e;
-  --cor-fundo: #0f172a;
-  --cor-texto: #e5e7eb;
-  --fonte: 'Segoe UI', sans-serif;
-}
-
-/* Estilo geral */
+/* Corpo */
 body {
-  font-family: var(--fonte);
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
 }
 
-/* Efeito suave em links */
-a {
-  color: var(--cor-primaria);
+/* Cabeçalho */
+header {
+  background: #1e293b;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+header h1 {
+  font-size: 20px;
+}
+
+/* Menu */
+nav a {
+  color: #fff;
+  margin-left: 15px;
   text-decoration: none;
   transition: 0.3s;
 }
 
-a:hover {
-  opacity: 0.7;
+nav a:hover {
+  color: #38bdf8;
 }
 
-/* Classe utilitária */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Conteúdo */
+main {
   padding: 20px;
 }
 
-/* Pequeno detalhe estiloso */
-::selection {
-  background: var(--cor-secundaria);
-  color: #000;
+section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+  background: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
