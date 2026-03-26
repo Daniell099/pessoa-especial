@@ -1,13 +1,46 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis globais */
+:root {
+  --cor-primaria: #4f46e5;
+  --cor-secundaria: #22c55e;
+  --cor-fundo: #0f172a;
+  --cor-texto: #e5e7eb;
+  --fonte: 'Segoe UI', sans-serif;
+}
+
+/* Estilo geral */
 body {
-  background-color: blue; /*Pode escolher outra cor se quiser*/
+  font-family: var(--fonte);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
 }
 
-h1 {
-  color: white; /*Pode escolher outra cor se quiser*/
-  text-align: center;
+/* Efeito suave em links */
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+a:hover {
+  opacity: 0.7;
+}
+
+/* Classe utilitária */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Pequeno detalhe estiloso */
+::selection {
+  background: var(--cor-secundaria);
+  color: #000;
 }
